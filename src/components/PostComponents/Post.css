@@ -1,0 +1,71 @@
+.Post{
+    background-color: white;
+    margin: 27.5px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px  solid lightgray;
+    border-radius: 7px;
+}
+
+.Post_header{
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+}
+
+.Post_image{
+    width: 100%;
+    object-fit: contain;
+    border-bottom: 1px  solid rgba(211, 211, 211, 0.404);
+    border-top: 1px  solid  rgba(211, 211, 211, 0.404);
+}
+
+.Comment_form{
+    width: 97%;
+    display: flex;
+    padding-left: 1vw;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+}
+
+.comment_input{
+    width: 90%;
+    border: 0;
+}
+
+.comment_input:focus{
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.Caption_section{
+    padding-left: 1vw;
+    padding-bottom: 1vh;}
+
+.Comment_section{
+    padding-left: 1vw;
+    padding-bottom: 2vh;
+    max-height: 10vh;
+    overflow: auto;
+}
+
+.LoggedIn_Info p,h3{
+    font-size: 1.4vmax;
+}
+
+.Comment_Post_Button{
+    background-color: white;
+    border: none;
+}
+
+.arrow{
+    cursor: pointer;
+    
+}
+
+.comment{
+    color: rgba(26, 30, 31, 0.897);
+}

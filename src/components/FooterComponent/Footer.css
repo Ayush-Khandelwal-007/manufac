@@ -1,0 +1,30 @@
+.app_footer{
+    background-color: white;
+    position: sticky;
+    bottom: 0px;
+    width: 99%;
+    padding: 10px;
+    border-top: 1px  solid lightgray;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    height: max-content;
+}
+
+.Progress_bar{
+    width: 70%;
+    margin: 0vh 0px 2vh 0px;
+}
+
+.Upload_data{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Caption_input{
+    width: 30vw;
+}
