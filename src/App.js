@@ -35,22 +35,24 @@ function App() {
         <Router>
 
           <Header />
-          <Switch>
-            <Route exact path={ROUTES.HOME}>
-              {user ? <Redirect to={ROUTES.SIGN_IN} /> : <DashBoard />}
-            </Route>
+          <div className="RenderScreen">
+            <Switch >
+              <Route exact path={ROUTES.HOME}>
+                {user ? <Redirect to={ROUTES.SIGN_IN} /> : <DashBoard />}
+              </Route>
 
-            <Route exact path={ROUTES.DASHBOARD}>
-              {user ? <DashBoard /> : <Redirect to={ROUTES.SIGN_IN} />}
-            </Route>
-            <Route exact path={ROUTES.SIGN_IN}>
-              {user ? <Redirect to={ROUTES.DASHBOARD} /> : <SignInPage />}
-            </Route>
+              <Route exact path={ROUTES.DASHBOARD}>
+                {user ? <DashBoard /> : <Redirect to={ROUTES.SIGN_IN} />}
+              </Route>
+              <Route exact path={ROUTES.SIGN_IN}>
+                {user ? <Redirect to={ROUTES.DASHBOARD} /> : <SignInPage />}
+              </Route>
 
-            <Route exact path={ROUTES.SIGN_UP}>
-              {user ? <Redirect to={ROUTES.DASHBOARD} /> : <SignUpPage />}
-            </Route>
-          </Switch>
+              <Route exact path={ROUTES.SIGN_UP}>
+                {user ? <Redirect to={ROUTES.DASHBOARD} /> : <SignUpPage />}
+              </Route>
+            </Switch>
+          </div>
           <Footer profileinfo={user} />
         </Router>
       </ContextProvider>

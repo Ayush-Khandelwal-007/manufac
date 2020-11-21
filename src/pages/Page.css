@@ -1,3 +1,53 @@
 .Dashboard{
     height: 100vh;
 }
+
+.input_field{
+    margin: 1vh 2vw;
+    width: 20vw;
+    background-color: #befffc;
+    padding: 0.5vh;
+    /* border-radius: 6%; */
+}
+
+.Sign_Up_Input_Fields,.Sign_In_Input_Fields{
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+}
+
+.Sign_Up_Form,.Sign_In_Form{
+    width: max-content;
+    height: min-content;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2%;
+    padding: 5vmin 4vmin 4vmin 4vmin;
+    align-items: center;
+}
+
+.SignButt{
+    border: 0;
+    height: 5vh;
+    margin-top: 2vh;
+    color: white;
+    font-size: 2.3vmin;
+    padding: 1vh 0vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Google{
+    transform: scale(2);
+    margin-top:3vh;
+    margin-right: 1vw;
+}
+
+.Change_Form{
+    color: rgb(43, 116, 175);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}

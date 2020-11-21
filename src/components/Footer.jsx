@@ -3,7 +3,7 @@ import ImageUpload from './FooterComponent/ImageUpload'
 import './FooterComponent/Footer.css'
 
 
-function Footer({profileinfo}) {
+function Footer({ profileinfo }) {
 
     return (
         <>
@@ -11,7 +11,9 @@ function Footer({profileinfo}) {
                 profileinfo ? (
                     <ImageUpload />
                 ) : (
-                        <h3 className="app_footer">You Need to login to Upload and Comment</h3>
+                        <div className="app_footer">
+                            <h3>You Need to login to Upload and Comment</h3>
+                        </div>
                     )
             }
 

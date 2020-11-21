@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../routes/Routes';
 import { auth } from '../Firebase'
+import { Input, Button } from '@material-ui/core';
+import GoogleLogin from '../components/GoogleLogin';
 
 const SignUpPage = () => {
 
@@ -44,33 +46,33 @@ const SignUpPage = () => {
 
             <form>
                 <div className="Sign_Up_Input_Fields">
-                    <input
+                    <Input
                         className='input_field'
                         type="text"
                         placeholder="Display Name"
                         value={userinfo.displayName}
                         onChange={e => setUserinfo({ ...userinfo, displayName: e.target.value })}
                     />
-                    <input
+                    <Input
                         className='input_field'
                         type="text"
                         placeholder="Email"
                         value={userinfo.email}
                         onChange={e => setUserinfo({ ...userinfo, email: e.target.value })}
                     />
-                    <input
+                    <Input
                         className='input_field'
                         type="password"
                         placeholder="Password"
                         value={userinfo.password}
                         onChange={e => setUserinfo({ ...userinfo, password: e.target.value })}
                     />
-                    <button className="SignButt" type="submit" onClick={(e)=>trysignUp(e)}>Sign In</button>
+                    <Button className="SignButt" type="submit" onClick={(e)=>trysignUp(e)}>Sign In</Button>
                 </div>
             </form>
             <br></br>
-            <p>Already have an account? <Link to={ROUTES.SIGN_IN} >SignIn</Link></p>
-            {/* <GoogleLogin /> */}
+            <p>Already have an account? <Link to={ROUTES.SIGN_IN} className='Change_Form' >SignIn</Link></p>
+            <GoogleLogin />
         </div>
     )
 

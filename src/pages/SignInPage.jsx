@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../routes/Routes';
 import {auth} from '../Firebase'
+import { Input, Button } from '@material-ui/core';
+import GoogleLogin from '../components/GoogleLogin';
 
 const SignInPage = () => {
 
@@ -25,26 +27,26 @@ const SignInPage = () => {
         <div className="Sign_In_Form">
             <form>
                 <div className="Sign_In_Input_Fields">
-                    <input
+                    <Input
                         className='input_field'
                         type="text"
                         placeholder="Email"
                         value={userinfo.email}
                         onChange={e => setUserinfo({ ...userinfo, email: e.target.value })}
                     />
-                    <input
+                    <Input
                         className='input_field'
                         type="password"
                         placeholder="Password"
                         value={userinfo.password}
                         onChange={e => setUserinfo({ ...userinfo, password: e.target.value })}
                     />
-                    <button className="SignButt" type="submit" onClick={signIn}>Sign In</button>
+                    <Button className="SignButt" type="submit" onClick={signIn}>Sign In</Button>
                 </div>
             </form>
             <br></br>
-            <p>Don't have an account? <Link to={ROUTES.SIGN_UP} >SignUp</Link></p>
-            {/* <GoogleLogin /> */}
+            <p>Don't have an account? <Link to={ROUTES.SIGN_UP} className='Change_Form' >SignUp</Link></p>
+            <GoogleLogin />
         </div>
     )
 }
