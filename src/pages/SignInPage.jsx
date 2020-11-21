@@ -45,7 +45,7 @@ const SignInPage = () => {
                 </div>
             </form>
             <br></br>
-            <p>Don't have an account? <Link to={ROUTES.SIGN_UP} className='Change_Form' >SignUp</Link></p>
+            <p>Don't have an account? <Link to={ROUTES.SIGN_UP} className='Change_Form' >Sign Up</Link></p>
             <GoogleLogin />
         </div>
     )

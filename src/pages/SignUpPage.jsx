@@ -71,7 +71,7 @@ const SignUpPage = () => {
                 </div>
             </form>
             <br></br>
-            <p>Already have an account? <Link to={ROUTES.SIGN_IN} className='Change_Form' >SignIn</Link></p>
+            <p>Already have an account? <Link to={ROUTES.SIGN_IN} className='Change_Form' >Sign In</Link></p>
             <GoogleLogin />
         </div>
     )
