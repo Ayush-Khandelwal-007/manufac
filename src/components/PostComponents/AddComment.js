@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { BsFillCaretRightFill,BsCaretRight } from 'react-icons/bs';
-import { db } from '../../firebase'
+import { db } from '../../Firebase'
 import firebase from 'firebase'
 import ProfileContext from '../../contexts/ProfileContext'
 

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import './Header.css'
 import { Button } from '@material-ui/core'
-import { auth } from '../../firebase'
+import { auth } from '../../Firebase'
 import ProfileContext from '../../contexts/ProfileContext'
 
 function Sidebar() {

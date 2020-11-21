@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { db } from '../../firebase'
+import { db } from '../../Firebase'
 import AddComment from './AddComment';
 import ProfileContext from '../../contexts/ProfileContext'
 

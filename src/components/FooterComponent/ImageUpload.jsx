@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Button } from '@material-ui/core'
 import firebase from 'firebase';
-import { storage, db } from '../../firebase'
+import { storage, db } from '../../Firebase'
 import ProfileContext from '../../contexts/ProfileContext'
 
 function ImageUpload() {

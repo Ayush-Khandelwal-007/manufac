@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../routes/Routes';
-import {auth} from '../firebase'
+import {auth} from '../Firebase'
 
 const SignInPage = () => {
 
