@@ -1,13 +1,13 @@
-.Post{
+.Post {
     background-color: white;
-    margin: 27.5px;
-    width: 100%;
+    margin: 27.5px 2px;
+    width: 98vw;
     max-width: 600px;
-    border: 1px  solid lightgray;
+    border: 1px solid lightgray;
     border-radius: 7px;
 }
 
-.Post_header{
+.Post_header {
     height: 27px;
     display: flex;
     flex-direction: row;
@@ -15,14 +15,14 @@
     padding: 16px;
 }
 
-.Post_image{
+.Post_image {
     width: 100%;
     object-fit: contain;
-    border-bottom: 1px  solid rgba(211, 211, 211, 0.404);
-    border-top: 1px  solid  rgba(211, 211, 211, 0.404);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.404);
+    border-top: 1px solid rgba(211, 211, 211, 0.404);
 }
 
-.Comment_form{
+.Comment_form {
     width: 97%;
     display: flex;
     padding-left: 1vw;
@@ -30,42 +30,71 @@
     border-top: 1px solid lightgray;
 }
 
-.comment_input{
+.comment_input {
     width: 90%;
     border: 0;
 }
 
-.comment_input:focus{
+.comment_input:focus {
     outline-style: none;
     box-shadow: none;
     border-color: transparent;
 }
 
-.Caption_section{
+.Caption_section {
     padding-left: 1vw;
-    padding-bottom: 1vh;}
+    padding-bottom: 1vh;
+}
 
-.Comment_section{
+.Comment_section {
     padding-left: 1vw;
     padding-bottom: 2vh;
     max-height: 10vh;
     overflow: auto;
 }
 
-.LoggedIn_Info p,h3{
+.LoggedIn_Info p,
+h3 {
     font-size: 1.4vmax;
 }
 
-.Comment_Post_Button{
+.Comment_Post_Button {
     background-color: white;
     border: none;
 }
 
-.arrow{
+.arrow {
     cursor: pointer;
-    
 }
 
-.comment{
+.comment {
     color: rgba(26, 30, 31, 0.897);
+}
+
+.dark .Post {
+    background-color: rgb(33, 33, 63);
+    border: 1px solid rgb(7, 2, 26);
+}
+
+.dark .Comment_Post_Button,
+.dark .comment_input {
+    color: aqua;
+    background-color: transparent;
+}
+
+.dark .Post_header {
+    color: aqua;
+}
+
+.dark .Post_image {
+    border-bottom: 1px solid rgb(7, 2, 26);
+    border-top: 1px solid rgb(7, 2, 26);
+}
+
+.dark .Caption_section {
+    color: rgb(94, 94, 194);
+}
+
+.dark .comment {
+    color: rgb(70, 70, 145);
 }

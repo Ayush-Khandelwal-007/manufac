@@ -1,6 +1,5 @@
 import React from 'react'
-import Sidebar from './HeaderComponents/Sidebar'
-import logo from '../images/Logo.png';
+import Sidebar from './HeaderComponents/Sidebar' 
 import './HeaderComponents/Header.css'
 
 const Header = () => {
@@ -8,7 +7,6 @@ const Header = () => {
         <div className="app_header">
             <img
                 className="app_headerImage"
-                src={logo}
                 alt="logo" />
             <Sidebar/>
         </div>

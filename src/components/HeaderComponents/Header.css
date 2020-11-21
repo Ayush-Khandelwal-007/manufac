@@ -1,27 +1,64 @@
-.app_header{
+.app_header {
     background-color: white;
     position: sticky;
-    top:0px;
+    top: 0px;
     width: 99%;
-    padding: 10px;
-    object-fit: contain;
-    border-bottom: 1px  solid lightgray;
+    padding: 1vh 1vw;
+    border-bottom: 1px solid lightgray;
     display: flex;
     flex-direction: row;
-    padding-top: 15px;
+    padding-top: 1vh;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
 }
-  
-.app_headerImage{
+
+.app_headerImage {
+    content: url('../../images/Logo.png');
     object-fit: contain;
-    width: 10vw;
+    width: 7vw;
     margin-left: 1vw;
 }
 
-.Header_Sidebar{
+.Header_Sidebar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    min-width: 15vw;
+    max-width: 25vw;
+}
+
+.LoggedIn_Info{
+    font-size: 1.5vh;
+}
+
+
+
+.dark .app_header {
+    color: aqua;
+    background-color: rgb(5, 5, 22);
+    border-bottom: 1px solid rgb(7, 2, 26);
+}
+
+.dark .logout_button {
+    color: aqua;
+    background-color: rgb(160, 52, 52);
+}
+
+.dark .app_headerImage {
+    content: url('../../images/LogoDark.png');
+}
+
+.dark .LoggedIn_Info{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .DarkToggle {
+        transform: scale(0.7);
+    }
+    .Header_Sidebar{
+        position: relative;
+        right: 5vw;
+    }
 }

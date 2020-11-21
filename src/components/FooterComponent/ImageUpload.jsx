@@ -1,18 +1,18 @@
 import React, { useContext, useState } from 'react'
-import { Button } from '@material-ui/core'
 import firebase from 'firebase';
 import { storage, db } from '../../Firebase'
 import ProfileContext from '../../contexts/ProfileContext'
+import { MdLocalPostOffice } from 'react-icons/md';
 
 function ImageUpload() {
     const [caption, setCaption] = useState('');
     const [inputImage, setInputImage] = useState(null);
     const [progress, setProgress] = useState(0);
 
-    const profileinfo=useContext(ProfileContext);
+    const profileinfo = useContext(ProfileContext);
 
     const Upload = () => {
-        if(caption!=='' && inputImage ){
+        if (caption !== '' && inputImage) {
             UploadPost();
         }
     }
@@ -65,7 +65,7 @@ function ImageUpload() {
                     value={caption}
                     onChange={(e) => { setCaption(e.target.value) }}
                 />
-                <Button className="Upload_button" onClick={Upload}>Upload</Button>
+                <div className="Upload_button" onClick={Upload}><MdLocalPostOffice className="postlogo"/></div>
             </div>
         </div>
     )

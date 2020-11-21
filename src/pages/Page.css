@@ -1,22 +1,25 @@
-.Dashboard{
+.Dashboard {
     height: 100vh;
 }
 
-.input_field{
-    margin: 1vh 2vw;
+.input_field {
+    margin: 1vh 0vw;
     width: 20vw;
     background-color: #befffc;
     padding: 0.5vh;
-    /* border-radius: 6%; */
+    border-radius: 3px;
 }
 
-.Sign_Up_Input_Fields,.Sign_In_Input_Fields{
+.Sign_Up_Input_Fields,
+.Sign_In_Input_Fields {
     display: flex;
     width: max-content;
     flex-direction: column;
+    padding: 0px;
 }
 
-.Sign_Up_Form,.Sign_In_Form{
+.Sign_Up_Form,
+.Sign_In_Form {
     width: max-content;
     height: min-content;
     border: 2px solid #000;
@@ -28,10 +31,9 @@
     align-items: center;
 }
 
-.SignButt{
+.SignButt {
     border: 0;
     height: 5vh;
-    margin-top: 2vh;
     color: white;
     font-size: 2.3vmin;
     padding: 1vh 0vw;
@@ -39,15 +41,34 @@
     cursor: pointer;
 }
 
-.Google{
+.Google {
     transform: scale(2);
-    margin-top:3vh;
     margin-right: 1vw;
 }
 
-.Change_Form{
+.Dashboard {
+    padding-top: 15vh;
+}
+
+.Change_Form {
     color: rgb(43, 116, 175);
     text-decoration: none;
     cursor: pointer;
     font-weight: 700;
+}
+
+.dark .Sign_Up_Form,
+.dark .Sign_In_Form {
+    background-color: #081747;
+    color: white;
+}
+
+.dark .SignButt {
+    background-color: #318ee64f;
+    color: #befffc;
+}
+
+.dark .input_field {
+    background-color: rgb(15, 9, 32);
+    color: #befffc;
 }

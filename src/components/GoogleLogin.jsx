@@ -3,7 +3,7 @@ import firebase from 'firebase'
 import { FcGoogle } from 'react-icons/fc';
 
 
-function GoogleLogin({dispatch}) {
+function GoogleLogin() {
 
     const continueWithGoogle = (e) => {
         e.preventDefault();
@@ -17,8 +17,17 @@ function GoogleLogin({dispatch}) {
     }
 
     return (
-        <div style={{cursor:'pointer'}} onClick={continueWithGoogle}>
-        <FcGoogle className="Google" textAnchor="Continue with Google"/> Continue withGoogle
+        <div 
+            style={{cursor:'pointer',
+                    backgroundColor:'#f26f3f' ,
+                    display:'flex', 
+                    alignItems:'center', 
+                    padding:"1vh",
+                    marginTop:"2vh",
+                    borderRadius:"3px"
+                }} 
+            onClick={continueWithGoogle}>
+        <FcGoogle className="Google" textAnchor="Continue with Google"/> <p>Continue withGoogle</p>
         </div>
     )
 }
