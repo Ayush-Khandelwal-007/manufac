@@ -53,6 +53,7 @@ function ImageUpload() {
             <progress value={progress} className="Progress_bar" max="100%" />
             <div className="Upload_data">
                 <input
+                    className="Image_input"
                     type="file"
                     onChange={(e) => {
                         if (e.target.files[0]) setInputImage(e.target.files[0])

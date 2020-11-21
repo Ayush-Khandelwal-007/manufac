@@ -44,7 +44,7 @@ const SignUpPage = () => {
     return (
         <div className="Sign_Up_Form">
 
-            <form>
+            <form className="Form_M">
                 <div className="Sign_Up_Input_Fields">
                     <Input
                         className='input_field'
@@ -67,7 +67,7 @@ const SignUpPage = () => {
                         value={userinfo.password}
                         onChange={e => setUserinfo({ ...userinfo, password: e.target.value })}
                     />
-                    <Button className="SignButt" type="submit" onClick={(e)=>trysignUp(e)}>Sign In</Button>
+                    <Button className="SignButt" type="submit" onClick={(e)=>trysignUp(e)}>Sign Up</Button>
                 </div>
             </form>
             <br></br>

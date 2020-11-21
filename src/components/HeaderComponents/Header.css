@@ -61,4 +61,9 @@
         position: relative;
         right: 5vw;
     }
+    .app_headerImage {
+        object-fit: contain;
+        width: 15vw;
+        margin-left: 1vw;
+    }
 }

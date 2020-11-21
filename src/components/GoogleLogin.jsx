@@ -27,7 +27,7 @@ function GoogleLogin() {
                     borderRadius:"3px"
                 }} 
             onClick={continueWithGoogle}>
-        <FcGoogle className="Google" textAnchor="Continue with Google"/> <p>Continue withGoogle</p>
+        <FcGoogle className="Google" textAnchor="Continue with Google"/> <p>Continue with Google</p>
         </div>
     )
 }
