@@ -19,12 +19,13 @@ function GoogleLogin() {
     return (
         <div 
             style={{cursor:'pointer',
-                    backgroundColor:'#f26f3f' ,
+                    backgroundColor:'white' ,
                     display:'flex', 
                     alignItems:'center', 
                     padding:"1vh",
                     marginTop:"2vh",
-                    borderRadius:"3px"
+                    borderRadius:"3px",
+                    color:"black"
                 }} 
             onClick={continueWithGoogle}>
         <FcGoogle className="Google" textAnchor="Continue with Google"/> <p>Continue with Google</p>

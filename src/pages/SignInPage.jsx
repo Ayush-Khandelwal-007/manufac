@@ -25,7 +25,7 @@ const SignInPage = () => {
 
     return (
         <div className="Sign_In_Form">
-            <form>
+            <form className="Form_M">
                 <div className="Sign_In_Input_Fields">
                     <Input
                         className='input_field'

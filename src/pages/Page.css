@@ -4,7 +4,7 @@
 
 .input_field {
     margin: 0vh 0vw 2vh 0vh;
-    width: 100;
+    width: 100%;
     background-color: #befffc;
     padding: 0.5vh;
     border-radius: 3px;
@@ -60,6 +60,12 @@
     font-weight: 700;
 }
 
+.Form_M{
+    width:80%;
+    display: flex;
+    justify-content: center
+}
+
 .dark .Sign_Up_Form,
 .dark .Sign_In_Form {
     background-color: #081747;
@@ -82,7 +88,7 @@
         margin-right: 3vw;
     }
     .Form_M{
-        width:100%;
+        width:90%;
         display: flex;
         justify-content: center
     }
