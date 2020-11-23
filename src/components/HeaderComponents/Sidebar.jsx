@@ -36,7 +36,7 @@ function Sidebar() {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem>{profileinfo.displayName}</MenuItem>
+            <MenuItem onClick={handleClose}>{profileinfo.displayName}</MenuItem>
             <MenuItem onClick={() => auth.signOut()}>Logout</MenuItem>
           </Menu>
         </div>
